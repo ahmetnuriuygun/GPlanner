@@ -67,7 +67,7 @@ public class UserTaskService : IUserTaskService
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Error deleting task: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"Error deleting task with ID {taskId}: {ex.ToString()}");
             return false;
         }
     }

@@ -23,8 +23,8 @@ public class UserTaskRepository : IUserTaskRepository
         {
             _context.UserTasks.Remove(task);
             await _context.SaveChangesAsync();
-            return true; // Deletion successful
+            return true;
         }
-        return false; // Task not found
+        return false;
     }
 }

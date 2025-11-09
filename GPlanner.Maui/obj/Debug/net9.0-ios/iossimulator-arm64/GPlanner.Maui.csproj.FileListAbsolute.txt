@@ -281,8 +281,8 @@
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Assets.xcassets/appicon.appiconset/appicon20x20@3x.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Assets.xcassets/appicon.appiconset/appicon20x20@2x.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Assets.xcassets/appicon.appiconset/Contents.json
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Resources/delete.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Resources/edit.png
+/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Resources/delete.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/resizetizer/r/Resources/add.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/mauiimage.stamp
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-ios/iossimulator-arm64/mauiimage.outputs

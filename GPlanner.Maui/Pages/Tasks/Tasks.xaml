@@ -33,7 +33,7 @@
               <SwipeItems Mode="Reveal">
                 <SwipeItem Text="Delete"
                            IconImageSource="delete.png"
-                           Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.DeleteCommand}"
+                           Command="{Binding Source={x:Reference TasksPageRoot}, Path=BindingContext.DeleteCommand}"
                            CommandParameter="{Binding .}"/>
               </SwipeItems>
             </SwipeView.RightItems>
