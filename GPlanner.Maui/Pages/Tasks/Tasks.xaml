@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GPlanner.Maui.Pages.TasksPage"
-             Title="Tasks Page"
              xmlns:viewModel="clr-namespace:GPlanner.Maui.ViewModels"
+             x:Class="GPlanner.Maui.Pages.TasksPage"
              x:DataType="viewModel:TasksViewModel"
-             xmlns:dto="clr-namespace:GPlanner.Maui.Services.Dtos"
-             x:Name="TasksPageRoot">
+             Title="Tasks Page">
+
   <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Add item"
+    <ToolbarItem Text="Add"
                  IconImageSource="add.png"
                  Command="{Binding OpenTaskModalCommand}"/>
   </ContentPage.ToolbarItems>
@@ -17,6 +16,7 @@
         Padding="10"
         RowSpacing="10">
 
+    <!-- Search -->
     <SearchBar Grid.Row="0"
                Placeholder="Search tasks..."
                Text="{Binding SearchText, Mode=TwoWay}"
@@ -24,17 +24,18 @@
                FontSize="16"
                TextColor="#202124"/>
 
+    <!-- Tasks list -->
     <CollectionView Grid.Row="1"
                     ItemsSource="{Binding FilteredTasks}">
       <CollectionView.ItemTemplate>
-        <DataTemplate x:DataType="dto:UserTaskReadDto">
+        <DataTemplate x:DataType="viewModel:TaskItemViewModel">
           <SwipeView>
             <SwipeView.RightItems>
               <SwipeItems Mode="Reveal">
                 <SwipeItem Text="Delete"
                            IconImageSource="delete.png"
-                           Command="{Binding Source={x:Reference TasksPageRoot}, Path=BindingContext.DeleteCommand}"
-                           CommandParameter="{Binding .}"/>
+                           BackgroundColor="#f44336"
+                           Command="{Binding DeleteCommand}"/>
               </SwipeItems>
             </SwipeView.RightItems>
 
@@ -47,6 +48,7 @@
 
               <Grid RowDefinitions="Auto,Auto"
                     ColumnDefinitions="*,Auto">
+                <!-- Title -->
                 <Label Grid.Row="0"
                        Grid.Column="0"
                        Text="{Binding Title}"
@@ -55,18 +57,19 @@
                        TextColor="#202124"
                        VerticalOptions="Center"/>
 
+                <!-- Edit button -->
                 <ImageButton Grid.Row="0"
                              Grid.Column="1"
                              Source="edit.png"
                              BackgroundColor="Transparent"
-                             WidthRequest="18"
-                             HeightRequest="18"
-                             Command="{Binding Source={x:Reference TasksPageRoot}, Path=BindingContext.OpenTaskModalCommand}"
-                             CommandParameter="{Binding .}"
+                             WidthRequest="20"
+                             HeightRequest="20"
+                             Command="{Binding EditCommand}"
                              HorizontalOptions="End"
                              VerticalOptions="Center"
                              Padding="4"/>
 
+                <!-- Meta info -->
                 <StackLayout Grid.Row="1"
                              Grid.Column="0"
                              Grid.ColumnSpan="2"
@@ -89,6 +92,5 @@
         </DataTemplate>
       </CollectionView.ItemTemplate>
     </CollectionView>
-
   </Grid>
 </ContentPage>

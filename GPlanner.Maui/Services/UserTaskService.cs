@@ -13,9 +13,9 @@ public class UserTaskService : IUserTaskService
 
 
 #if ANDROID
-        BaseUrl = "http://10.0.2.2:8080/api/usertask";
+        BaseUrl = "http://10.0.2.2:5036/api/usertask";
 #else
-        BaseUrl = "http://localhost:8080/api/usertask";
+        BaseUrl = "http://localhost:5036/api/usertask";
 #endif
     }
 
@@ -44,25 +44,57 @@ public class UserTaskService : IUserTaskService
         return new List<UserTask>();
     }
 
-    public Task<UserTask> UpdateTaskAsync(UserTask updatedTask)
+    public async Task<bool> CreateTaskAsync(UserTask newTask)
     {
-        throw new NotImplementedException();
+        var url = $"{BaseUrl}";
+        try
+        {
+            var jsonContent = JsonSerializer.Serialize(newTask);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync(url, httpContent);
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Error creating task: {ex.ToString()}");
+            return false;
+        }
     }
 
-    public Task<UserTask> CreateTaskAsync(UserTask newTask)
+
+    public async Task<bool> UpdateTaskAsync(UserTask updatedTask)
     {
-        throw new NotImplementedException();
+        var url = $"{BaseUrl}/{updatedTask.TaskId}";
+        try
+        {
+            var jsonContent = JsonSerializer.Serialize(updatedTask);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync(url, httpContent);
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Error updating task with ID {updatedTask.TaskId}: {ex.ToString()}");
+            return false;
+        }
     }
+
+
+
+
+
 
     public async Task<bool> DeleteTaskAsync(int taskId)
     {
         var url = $"{BaseUrl}/{taskId}";
         try
         {
-            // Call the API endpoint
             var response = await _httpClient.DeleteAsync(url);
 
-            // Check for success (200 OK or 204 No Content)
             return response.IsSuccessStatusCode;
         }
         catch (Exception ex)

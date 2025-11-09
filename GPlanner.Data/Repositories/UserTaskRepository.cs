@@ -16,6 +16,29 @@ public class UserTaskRepository : IUserTaskRepository
             .ToListAsync();
     }
 
+    public async Task<UserTask> CreateUserTaskAsync(UserTask newTask)
+    {
+        await _context.UserTasks.AddAsync(newTask);
+        await _context.SaveChangesAsync();
+
+        return newTask;
+    }
+
+
+    public async Task<bool> UpdateUserTaskAsync(UserTask updatedTask)
+    {
+        var existingTask = await _context.UserTasks.FindAsync(updatedTask.TaskId);
+
+        if (existingTask == null)
+        {
+            return false;
+        }
+        _context.Entry(existingTask).CurrentValues.SetValues(updatedTask);
+
+        await _context.SaveChangesAsync();
+        return true;
+    }
+
     public async Task<bool> DeleteUserTaskAsync(int taskId)
     {
         var task = await _context.UserTasks.FindAsync(taskId);
