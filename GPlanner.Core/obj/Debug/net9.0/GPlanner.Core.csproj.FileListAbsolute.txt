@@ -6,6 +6,7 @@
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/GPlanner.Core.AssemblyInfoInputs.cache
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/GPlanner.Core.AssemblyInfo.cs
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/GPlanner.Core.csproj.CoreCompileInputs.cache
+/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/GPlanner.Core.sourcelink.json
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/GPlanner.Core.dll
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/refint/GPlanner.Core.dll
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/Debug/net9.0/GPlanner.Core.pdb

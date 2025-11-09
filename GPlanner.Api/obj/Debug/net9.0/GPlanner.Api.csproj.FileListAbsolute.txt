@@ -132,6 +132,7 @@
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/GPlanner.Api.csproj.CoreCompileInputs.cache
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/GPlanner.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/GPlanner.Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/GPlanner.Api.sourcelink.json
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/rjimswa.dswa.cache.json
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json

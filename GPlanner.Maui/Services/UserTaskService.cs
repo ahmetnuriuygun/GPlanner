@@ -19,6 +19,7 @@ public class UserTaskService : IUserTaskService
 #endif
     }
 
+
     public async Task<List<UserTask>> GetTasksByUserIdAsync(int userId)
     {
         var url = $"{BaseUrl}/{userId}";
@@ -41,5 +42,20 @@ public class UserTaskService : IUserTaskService
             System.Diagnostics.Debug.WriteLine($"Error fetching tasks: {ex.Message}");
         }
         return new List<UserTask>();
+    }
+
+    public Task<UserTask> UpdateTaskAsync(UserTask updatedTask)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<UserTask> CreateTaskAsync(UserTask newTask)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<bool> DeleteTaskAsync(int taskId)
+    {
+        throw new NotImplementedException();
     }
 }

@@ -68,11 +68,6 @@
           },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "iossimulator-arm64": {
-          "#import": []
-        }
       }
     },
     "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj": {
@@ -310,7 +305,16 @@
         }
       },
       "runtimes": {
+        "android-arm64": {
+          "#import": []
+        },
+        "android-x64": {
+          "#import": []
+        },
         "iossimulator-arm64": {
+          "#import": []
+        },
+        "maccatalyst-arm64": {
           "#import": []
         }
       }

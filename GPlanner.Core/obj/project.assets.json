@@ -18,24 +18,6 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       }
-    },
-    "net9.0/iossimulator-arm64": {
-      "CommunityToolkit.Mvvm/8.4.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "build": {
-          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -153,11 +135,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "iossimulator-arm64": {
-        "#import": []
       }
     }
   }

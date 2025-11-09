@@ -4,7 +4,7 @@ namespace GPlanner.Maui.Resources.Converters
 {
     public class BoolToTextConverter : IValueConverter
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
         {
             if (value is bool isEdit && parameter is string param)
             {
@@ -14,7 +14,7 @@ namespace GPlanner.Maui.Resources.Converters
             return "Save";
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) =>
-            throw new NotImplementedException();
+        public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
+            => throw new NotImplementedException();
     }
 }

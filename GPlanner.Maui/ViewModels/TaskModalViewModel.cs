@@ -1,47 +1,71 @@
-using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using GPlanner.Core.Model;
+using GPlanner.Maui.Interfaces;
+using GPlanner.Maui.Services.Dtos;
+using AutoMapper;
 
-using GPlanner.Maui.Models;
 namespace GPlanner.Maui.ViewModels
 {
-
-
-
     public partial class TaskModalViewModel : ObservableObject
     {
-
-
-        [ObservableProperty]
-        TaskDisplayModel currentTask;
-
+        private readonly IUserTaskService _taskService;
+        private readonly IMapper _mapper;
 
         [ObservableProperty]
-        TimeSpan newTaskTime;
+        private bool isEditMode;
 
         [ObservableProperty]
-        bool isEditMode;
+        private UserTaskBaseDto activeTask = null!;
+
+        [ObservableProperty]
+        private TimeSpan newTaskTime = DateTime.Now.TimeOfDay;
 
         public Array TaskTypes => Enum.GetValues(typeof(TaskType));
 
-        private TasksViewModel _parentVm;
-
-        public void Initialize(UserTask task, TasksViewModel parentVm, bool isEdit = false)
+        public TaskModalViewModel(IUserTaskService taskService, IMapper mapper)
         {
+            _taskService = taskService;
+            _mapper = mapper;
+        }
 
+        public void Initialize(UserTaskReadDto? dto)
+        {
+            if (dto != null)
+            {
+                IsEditMode = true;
+                ActiveTask = _mapper.Map<UserTaskUpdateDto>(dto);
+            }
+            else
+            {
+                IsEditMode = false;
+                ActiveTask = new UserTaskCreateDto { Date = DateTime.Now.Date };
+            }
         }
 
         [RelayCommand]
-        async Task AddOrSave()
+        public async Task AddOrSaveAsync()
         {
+            ActiveTask.Date = ActiveTask.Date.Date + NewTaskTime;
 
+            if (IsEditMode)
+            {
+                var entity = _mapper.Map<UserTask>((UserTaskUpdateDto)ActiveTask);
+                await _taskService.UpdateTaskAsync(entity);
+            }
+            else
+            {
+                var dto = (UserTaskCreateDto)ActiveTask;
+                dto.UserId = 1;
+                var entity = _mapper.Map<UserTask>(dto);
+                await _taskService.CreateTaskAsync(entity);
+            }
+
+            await Shell.Current.Navigation.PopModalAsync();
         }
 
-
-
         [RelayCommand]
-        async Task Cancel()
+        async Task CancelAsync()
         {
             await Shell.Current.Navigation.PopModalAsync();
         }

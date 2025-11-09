@@ -24,7 +24,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<IUserTaskService, UserTaskService>();
 
 
-		builder.Services.AddAutoMapper(typeof(MappingProfile));
+		builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 		builder.Services.AddTransient<ToDoPage>();
 		builder.Services.AddTransient<ToDoViewModel>();
 
@@ -36,6 +36,8 @@ public static class MauiProgram
 
 		builder.Services.AddTransient<TaskModal>();
 		builder.Services.AddTransient<TaskModalViewModel>();
+		builder.Services.AddTransient<Func<TaskModalViewModel>>(sp =>
+	() => sp.GetRequiredService<TaskModalViewModel>());
 
 
 
