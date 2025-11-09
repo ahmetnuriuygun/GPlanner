@@ -16,12 +16,9 @@ androidx.fragment.app.FragmentContainerView;/Users/ahmetnuriuygun/Desktop/GPlann
 attr;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/values/attr.xml
 background;obj/Debug/net9.0-android/resizetizer/r/mipmap-anydpi-v26/appicon_round.xml
 background;obj/Debug/net9.0-android/resizetizer/r/mipmap-anydpi-v26/appicon.xml
-bitmap;obj/Debug/net9.0-android/resizetizer/sp/drawable-v31/maui_splash_image.xml
-bitmap;obj/Debug/net9.0-android/resizetizer/sp/drawable/maui_splash_image.xml
 cache-path;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/159/jl/res/xml/microsoft_maui_essentials_fileprovider_file_paths.xml
 color;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/values/colors.xml
 color;obj/Debug/net9.0-android/res/values/colors.xml
-color;obj/Debug/net9.0-android/resizetizer/sp/values/maui_colors.xml
 com.google.android.material.appbar.AppBarLayout;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/156/jl/res/layout/flyoutcontent.xml
 com.google.android.material.appbar.AppBarLayout;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/156/jl/res/layout/shellcontent.xml
 com.google.android.material.appbar.AppBarLayout;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/layout/navigationlayout.xml
@@ -35,12 +32,8 @@ item;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9
 item;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/values-v35/styles.xml
 item;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/values/styles.xml
 item;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/162/jl/res/values/values.xml
-item;obj/Debug/net9.0-android/resizetizer/sp/drawable-v31/maui_splash_image.xml
-item;obj/Debug/net9.0-android/resizetizer/sp/drawable/maui_splash_image.xml
 layer-list;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/drawable/maui_splash_image.xml
 layer-list;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/drawable/maui_splash.xml
-layer-list;obj/Debug/net9.0-android/resizetizer/sp/drawable-v31/maui_splash_image.xml
-layer-list;obj/Debug/net9.0-android/resizetizer/sp/drawable/maui_splash_image.xml
 microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/156/jl/res/layout/flyoutcontent.xml
 monochrome;obj/Debug/net9.0-android/resizetizer/r/mipmap-anydpi-v26/appicon_round.xml
 monochrome;obj/Debug/net9.0-android/resizetizer/r/mipmap-anydpi-v26/appicon.xml
@@ -53,7 +46,6 @@ resources;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug
 resources;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/158/jl/res/values/styles.xml
 resources;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/162/jl/res/values/values.xml
 resources;obj/Debug/net9.0-android/res/values/colors.xml
-resources;obj/Debug/net9.0-android/resizetizer/sp/values/maui_colors.xml
 set;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/156/jl/res/anim/enterfromleft.xml
 set;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/156/jl/res/anim/enterfromright.xml
 set;/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/156/jl/res/anim/exittoleft.xml

@@ -16,18 +16,8 @@
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/mauiimage.inputs
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/mauifont.inputs
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/mauisplash.inputs
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable-hdpi/splash.png
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable-mdpi/splash.png
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable-v31/maui_splash_image.xml
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable-xhdpi/splash.png
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable-xxhdpi/splash.png
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable-xxxhdpi/splash.png
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/drawable/maui_splash_image.xml
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/sp/values/maui_colors.xml
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/mauisplash.stamp
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/mauifont.stamp
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/f/OpenSans-Regular.ttf
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/f/OpenSans-Semibold.ttf
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/r/drawable-hdpi/dotnet_bot.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/r/drawable-mdpi/dotnet_bot.png
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/r/drawable-xhdpi/dotnet_bot.png
@@ -65,7 +55,6 @@
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/case_map.txt
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/__Microsoft.Android.Resource.Designer.cs
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/res.flag
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/99C9A40D1EA9DF15-files.cache
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/resizetizer/5F31308764AA5775-files.cache
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/95/jl/files.cache
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/lp/96/jl/files.cache
@@ -1350,8 +1339,6 @@
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/android/src/mono/com/google/android/material/textfield/TextInputLayout_OnEndIconChangedListenerImplementor.java
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/android/src/mono/MonoPackageManager_Resources.java
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/assets/AboutAssets.txt
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/assets/OpenSans-Regular.ttf
-/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/assets/OpenSans-Semibold.ttf
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/android/bin/packaged_resources
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/android/src/com/companyname/gplanner/maui/R.java
 /Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/Debug/net9.0-android/_CompileJava.FileList.txt

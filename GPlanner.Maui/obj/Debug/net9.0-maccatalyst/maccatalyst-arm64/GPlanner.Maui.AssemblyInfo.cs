@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GPlanner.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+703ae40b9b6b01ee7269cfaaafd9925b10ca080c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+aed5e7a969a735763cd8f06f74fcd804fcbe9254")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPlanner.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPlanner.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
