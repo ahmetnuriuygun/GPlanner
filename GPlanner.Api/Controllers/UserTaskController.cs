@@ -26,5 +26,21 @@ namespace GPlanner.Api.Controllers
             }
             return Ok(userTasks);
         }
+
+        [HttpDelete("{taskId}")]
+        public async Task<ActionResult> DeleteTask(int taskId)
+        {
+            // Await the asynchronous repository call
+            bool deleted = await _userTaskRepository.DeleteUserTaskAsync(taskId);
+
+            if (!deleted)
+            {
+                // Task not found
+                return NotFound();
+            }
+
+            // Standard HTTP response for successful deletion when no content is returned
+            return NoContent();
+        }
     }
 }

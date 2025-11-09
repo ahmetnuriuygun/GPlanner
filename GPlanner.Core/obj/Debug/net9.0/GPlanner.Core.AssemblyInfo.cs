@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GPlanner.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aed5e7a969a735763cd8f06f74fcd804fcbe9254")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+303ba1b1a09498093c73251299a724ee8ebf2761")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPlanner.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPlanner.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

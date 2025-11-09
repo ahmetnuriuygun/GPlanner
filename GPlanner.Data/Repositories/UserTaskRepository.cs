@@ -15,4 +15,16 @@ public class UserTaskRepository : IUserTaskRepository
             .Where(ut => ut.UserId == userId)
             .ToListAsync();
     }
+
+    public async Task<bool> DeleteUserTaskAsync(int taskId)
+    {
+        var task = await _context.UserTasks.FindAsync(taskId);
+        if (task != null)
+        {
+            _context.UserTasks.Remove(task);
+            await _context.SaveChangesAsync();
+            return true; // Deletion successful
+        }
+        return false; // Task not found
+    }
 }

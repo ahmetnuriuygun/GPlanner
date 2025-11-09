@@ -13,7 +13,7 @@ public class UserTaskService : IUserTaskService
 
 
 #if ANDROID
-                BaseUrl = "http://10.0.2.2:8080/api/usertask";
+        BaseUrl = "http://10.0.2.2:8080/api/usertask";
 #else
         BaseUrl = "http://localhost:8080/api/usertask";
 #endif
@@ -54,8 +54,21 @@ public class UserTaskService : IUserTaskService
         throw new NotImplementedException();
     }
 
-    public Task<bool> DeleteTaskAsync(int taskId)
+    public async Task<bool> DeleteTaskAsync(int taskId)
     {
-        throw new NotImplementedException();
+        var url = $"{BaseUrl}/{taskId}";
+        try
+        {
+            // Call the API endpoint
+            var response = await _httpClient.DeleteAsync(url);
+
+            // Check for success (200 OK or 204 No Content)
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Error deleting task: {ex.Message}");
+            return false;
+        }
     }
 }

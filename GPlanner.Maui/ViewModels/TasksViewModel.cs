@@ -89,8 +89,12 @@ namespace GPlanner.Maui.ViewModels
         [RelayCommand]
         public async Task Delete(UserTaskReadDto task)
         {
-            await _taskService.DeleteTaskAsync(task.TaskId);
-            await LoadTasksAsync();
+            bool success = await _taskService.DeleteTaskAsync(task.TaskId);
+            if (success)
+            {
+                // Reloads the list after successful deletion to update the UI
+                await LoadTasksAsync();
+            }
         }
 
 
