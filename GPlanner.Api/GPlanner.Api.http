@@ -1,0 +1,6 @@
+@GPlanner.Api_HostAddress = http://localhost:5036
+
+GET {{GPlanner.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

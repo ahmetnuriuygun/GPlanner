@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GPlanner.Maui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GPlanner.Maui.Pages"
+    Title="GPlanner.Maui">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:ToDoPage}"
+        Route="ToDo"/>
+
+    <ShellContent Title="User"
+                  ContentTemplate="{DataTemplate local:UserPage}"
+                  Route="user"/>
+
+    <ShellContent Title="Tasks"
+                  ContentTemplate="{DataTemplate local:TasksPage}"
+                  Route="tasks"/>
+
+</Shell>

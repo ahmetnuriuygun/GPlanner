@@ -1,0 +1,29 @@
+services:
+  # 1. MySQL Database Service
+  mysql_db_container_name:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: my_secure_password
+      MYSQL_DATABASE: gplanner_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # 2. ASP.NET API Service (GPlanner.Api)
+  gplanner_api:
+    image: ${DOCKER_REGISTRY-}gplannerapi
+    build:
+      context: .
+      dockerfile: GPlanner.Api/Dockerfile 
+    ports:
+      - "8080:8080" 
+    depends_on:
+      - mysql_db_container_name
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development 
+      - ConnectionStrings__DefaultConnection=Server=mysql_db_container_name;Port=3306;Database=gplanner_db;Uid=root;Pwd=my_secure_password;
+
+volumes:
+  mysql_data:

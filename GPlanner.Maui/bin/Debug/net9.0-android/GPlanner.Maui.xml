@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GPlanner.Maui</name>
+    </assembly>
+    <members>
+        <member name="T:GPlanner.Maui.Models.TaskDisplayModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:GPlanner.Maui.Models.TaskDisplayModel.Title">
+            <inheritdoc cref="F:GPlanner.Maui.Models.TaskDisplayModel.title"/>
+        </member>
+        <member name="P:GPlanner.Maui.Models.TaskDisplayModel.Description">
+            <inheritdoc cref="F:GPlanner.Maui.Models.TaskDisplayModel.description"/>
+        </member>
+        <member name="P:GPlanner.Maui.Models.TaskDisplayModel.DisplayDate">
+            <inheritdoc cref="F:GPlanner.Maui.Models.TaskDisplayModel.displayDate"/>
+        </member>
+        <member name="P:GPlanner.Maui.Models.TaskDisplayModel.PriorityText">
+            <inheritdoc cref="F:GPlanner.Maui.Models.TaskDisplayModel.priorityText"/>
+        </member>
+        <member name="P:GPlanner.Maui.Models.TaskDisplayModel.TaskType">
+            <inheritdoc cref="F:GPlanner.Maui.Models.TaskDisplayModel.taskType"/>
+        </member>
+        <member name="T:GPlanner.Maui.ViewModels.TaskModalViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TaskModalViewModel.CurrentTask">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TaskModalViewModel.currentTask"/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TaskModalViewModel.NewTaskTime">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TaskModalViewModel.newTaskTime"/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TaskModalViewModel.IsEditMode">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TaskModalViewModel.isEditMode"/>
+        </member>
+        <member name="F:GPlanner.Maui.ViewModels.TaskModalViewModel.addOrSaveCommand">
+            <summary>The backing field for <see cref="P:GPlanner.Maui.ViewModels.TaskModalViewModel.AddOrSaveCommand"/>.</summary>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TaskModalViewModel.AddOrSaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GPlanner.Maui.ViewModels.TaskModalViewModel.AddOrSave"/>.</summary>
+        </member>
+        <member name="F:GPlanner.Maui.ViewModels.TaskModalViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:GPlanner.Maui.ViewModels.TaskModalViewModel.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TaskModalViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GPlanner.Maui.ViewModels.TaskModalViewModel.Cancel"/>.</summary>
+        </member>
+        <member name="T:GPlanner.Maui.ViewModels.TasksViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.SearchText">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TasksViewModel.searchText"/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.Tasks">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TasksViewModel.tasks"/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.FilteredTasks">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TasksViewModel.filteredTasks"/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.CurrentTask">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.TasksViewModel.currentTask"/>
+        </member>
+        <member name="M:GPlanner.Maui.ViewModels.TasksViewModel.OnSearchTextChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:GPlanner.Maui.ViewModels.TasksViewModel.SearchText"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:GPlanner.Maui.ViewModels.TasksViewModel.SearchText"/> is changed.</remarks>
+        </member>
+        <member name="F:GPlanner.Maui.ViewModels.TasksViewModel.loadTasksCommand">
+            <summary>The backing field for <see cref="P:GPlanner.Maui.ViewModels.TasksViewModel.LoadTasksCommand"/>.</summary>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.LoadTasksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GPlanner.Maui.ViewModels.TasksViewModel.LoadTasksAsync"/>.</summary>
+        </member>
+        <member name="F:GPlanner.Maui.ViewModels.TasksViewModel.openTaskModalCommand">
+            <summary>The backing field for <see cref="P:GPlanner.Maui.ViewModels.TasksViewModel.OpenTaskModalCommand"/>.</summary>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.OpenTaskModalCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:GPlanner.Maui.ViewModels.TasksViewModel.OpenTaskModal(GPlanner.Maui.Models.TaskDisplayModel)"/>.</summary>
+        </member>
+        <member name="F:GPlanner.Maui.ViewModels.TasksViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:GPlanner.Maui.ViewModels.TasksViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:GPlanner.Maui.ViewModels.TasksViewModel.Delete(GPlanner.Maui.Models.TaskDisplayModel)"/>.</summary>
+        </member>
+        <member name="F:GPlanner.Maui.ViewModels.TasksViewModel.editTaskCommand">
+            <summary>The backing field for <see cref="P:GPlanner.Maui.ViewModels.TasksViewModel.EditTaskCommand"/>.</summary>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.TasksViewModel.EditTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:GPlanner.Maui.ViewModels.TasksViewModel.EditTask(GPlanner.Maui.Models.TaskDisplayModel)"/>.</summary>
+        </member>
+        <member name="T:GPlanner.Maui.ViewModels.UserViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:GPlanner.Maui.ViewModels.UserViewModel.User">
+            <inheritdoc cref="F:GPlanner.Maui.ViewModels.UserViewModel.user"/>
+        </member>
+        <member name="T:GPlanner.Maui.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DisplayDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DisplayDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PriorityText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PriorityText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TaskType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TaskType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentTask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentTask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewTaskTime">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewTaskTime" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEditMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEditMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SearchText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SearchText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FilteredTasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FilteredTasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DisplayDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DisplayDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PriorityText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PriorityText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TaskType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TaskType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentTask">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentTask" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewTaskTime">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewTaskTime" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEditMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEditMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SearchText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SearchText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FilteredTasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FilteredTasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+    </members>
+</doc>
