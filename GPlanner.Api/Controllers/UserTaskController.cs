@@ -21,22 +21,28 @@ namespace GPlanner.Api.Controllers
         {
             var userTasks = await _userTaskRepository.GetUserTasksByUserIdAsync(userId);
 
-            if (userTasks == null || !userTasks.Any())
+            if (userTasks == null)
             {
                 return Ok(new List<UserTask>());
             }
 
             return Ok(userTasks);
         }
-
         [HttpPost]
         public async Task<IActionResult> CreateTask([FromBody] UserTask newTask)
         {
+            if (newTask.UserId <= 0)
+            {
+                return BadRequest("User ID must be provided for task creation.");
+            }
+
+            newTask.TaskId = 0;
+
             var createdTask = await _userTaskRepository.CreateUserTaskAsync(newTask);
 
             if (createdTask == null)
             {
-                return BadRequest();
+                return StatusCode(500, "Failed to create task in the database.");
             }
 
             return CreatedAtAction(nameof(GetTasksByUserId), new { userId = createdTask.UserId }, createdTask);
@@ -51,11 +57,16 @@ namespace GPlanner.Api.Controllers
                 return BadRequest($"Task ID in the route ({taskId}) does not match the ID in the body ({updatedTask.TaskId}).");
             }
 
+            if (taskId <= 0)
+            {
+                return BadRequest("Invalid Task ID provided for update.");
+            }
+
             bool updated = await _userTaskRepository.UpdateUserTaskAsync(updatedTask);
 
             if (!updated)
             {
-                return NotFound();
+                return NotFound($"Task with ID {taskId} not found.");
             }
 
             return NoContent();
@@ -68,7 +79,20 @@ namespace GPlanner.Api.Controllers
 
             if (!deleted)
             {
-                return NotFound();
+                return NotFound($"Task with ID {taskId} was not found for deletion.");
+            }
+
+            return NoContent();
+        }
+
+        [HttpPost("archive/{taskId}")]
+        public async Task<IActionResult> ArchiveTask(int taskId)
+        {
+            bool archived = await _userTaskRepository.ArchiveUserTaskAsync(taskId);
+
+            if (!archived)
+            {
+                return NotFound($"Task with ID {taskId} was not found for archiving.");
             }
 
             return NoContent();

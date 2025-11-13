@@ -1,5 +1,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using System;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.Text.Json.Serialization;
 
 namespace GPlanner.Core.Model
 {
@@ -7,6 +9,9 @@ namespace GPlanner.Core.Model
     {
 
         public int TaskId { get; set; }
+
+
+
         public int UserId { get; set; }
 
         public string Title { get; set; } = string.Empty;

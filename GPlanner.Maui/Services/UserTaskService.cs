@@ -35,7 +35,6 @@ public class UserTaskService : IUserTaskService
                 };
                 return JsonSerializer.Deserialize<List<UserTask>>(content, options) ?? new List<UserTask>();
             }
-
         }
         catch (Exception ex)
         {
@@ -54,7 +53,20 @@ public class UserTaskService : IUserTaskService
 
             var response = await _httpClient.PostAsync(url, httpContent);
 
-            return response.IsSuccessStatusCode;
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                var createdTask = JsonSerializer.Deserialize<UserTask>(content, options);
+
+                if (createdTask != null)
+                {
+                    newTask.TaskId = createdTask.TaskId;
+                }
+                return true;
+            }
+
+            return false;
         }
         catch (Exception ex)
         {
@@ -84,10 +96,6 @@ public class UserTaskService : IUserTaskService
     }
 
 
-
-
-
-
     public async Task<bool> DeleteTaskAsync(int taskId)
     {
         var url = $"{BaseUrl}/{taskId}";
@@ -100,6 +108,22 @@ public class UserTaskService : IUserTaskService
         catch (Exception ex)
         {
             System.Diagnostics.Debug.WriteLine($"Error deleting task with ID {taskId}: {ex.ToString()}");
+            return false;
+        }
+    }
+
+    public async Task<bool> ArchiveTaskAsync(int taskId)
+    {
+        var url = $"{BaseUrl}/archive/{taskId}";
+        try
+        {
+            var response = await _httpClient.PostAsync(url, null);
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Error archiving task with ID {taskId}: {ex.ToString()}");
             return false;
         }
     }

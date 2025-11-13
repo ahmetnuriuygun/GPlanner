@@ -5,12 +5,23 @@ namespace GPlanner.Maui.ViewModels
 {
     public partial class UserViewModel : ObservableObject
     {
-        [ObservableProperty]
-        User user;
 
-        public UserViewModel()
+        private readonly IUserService _userService;
+        private readonly int loggedInUserId = 1;
+
+        [ObservableProperty]
+        private User user = new User();
+
+        public UserViewModel(IUserService userService)
         {
-            User = new User("Ahmet's Mock Profile");
+            _userService = userService ?? throw new ArgumentNullException(nameof(userService));
+        }
+
+        public async Task LoadUserAsync()
+        {
+
+            var loadedUser = await _userService.GetUserByIdAsync(loggedInUserId);
+            User = loadedUser;
         }
 
     }

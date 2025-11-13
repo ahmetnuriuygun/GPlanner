@@ -7,8 +7,15 @@ obj/Debug/net9.0-android/resizetizer/r/mipmap-hdpi/appicon_round.png
 obj/Debug/net9.0-android/resizetizer/r/mipmap-hdpi/appicon.png
 obj/Debug/net9.0-android/resizetizer/r/mipmap-hdpi/appicon_background.png
 obj/Debug/net9.0-android/resizetizer/r/drawable/add.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/arrow_right.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/archive.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/arrow_left.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/gemini.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/profile.png
 obj/Debug/net9.0-android/resizetizer/r/drawable/delete.png
 obj/Debug/net9.0-android/resizetizer/r/drawable/edit.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/check_circle_filled.png
+obj/Debug/net9.0-android/resizetizer/r/drawable/circle_outline.png
 obj/Debug/net9.0-android/resizetizer/r/mipmap-xxxhdpi/appicon_foreground.png
 obj/Debug/net9.0-android/resizetizer/r/mipmap-xxxhdpi/appicon_round.png
 obj/Debug/net9.0-android/resizetizer/r/mipmap-xxxhdpi/appicon.png

@@ -6,4 +6,6 @@ public interface IUserTaskRepository
 
     Task<UserTask> CreateUserTaskAsync(UserTask newTask);
     Task<bool> UpdateUserTaskAsync(UserTask updatedTask);
+
+    Task<bool> ArchiveUserTaskAsync(int taskId);
 }

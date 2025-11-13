@@ -4,10 +4,17 @@ namespace GPlanner.Maui.Pages
 {
     public partial class TasksPage : ContentPage
     {
+        private readonly TasksViewModel _viewModel;
         public TasksPage(TasksViewModel viewModel)
         {
             InitializeComponent();
-            BindingContext = viewModel;
+            BindingContext = _viewModel = viewModel;
+
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await _viewModel.LoadTasksAsync();
         }
     }
 }

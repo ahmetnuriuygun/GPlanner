@@ -22,7 +22,10 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddSingleton<IUserTaskService, UserTaskService>();
-		builder.Services.AddAutoMapper(typeof(MappingProfile));
+		builder.Services.AddSingleton<IToDoService, ToDoService>();
+		builder.Services.AddSingleton<IGeminiService, GeminiService>();
+		builder.Services.AddSingleton<IScheduledTaskService, ScheduledTaskService>();
+		builder.Services.AddSingleton<IUserService, UserService>();
 
 		builder.Services.AddTransient<ToDoPage>();
 		builder.Services.AddTransient<UserPage>();
@@ -34,11 +37,12 @@ public static class MauiProgram
 		builder.Services.AddTransient<TasksViewModel>();
 		builder.Services.AddTransient<TaskModalViewModel>();
 
+		builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 
 		builder.Services.AddTransient<Func<TasksViewModel, TaskModalViewModel>>(sp =>
 			(parentVm) => new TaskModalViewModel(
 				sp.GetRequiredService<IUserTaskService>(),
-				sp.GetRequiredService<IMapper>(),
 				parentVm
 			));
 

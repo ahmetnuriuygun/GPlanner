@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModel="clr-namespace:GPlanner.Maui.ViewModels"
+             xmlns:model="clr-namespace:GPlanner.Core.Model;assembly=GPlanner.Core"
              x:Class="GPlanner.Maui.Pages.TasksPage"
              x:DataType="viewModel:TasksViewModel"
-             Title="Tasks Page">
+             Title="My Tasks">
 
   <ContentPage.ToolbarItems>
     <ToolbarItem Text="Add"
@@ -16,81 +17,100 @@
         Padding="10"
         RowSpacing="10">
 
-    <!-- Search -->
     <SearchBar Grid.Row="0"
                Placeholder="Search tasks..."
                Text="{Binding SearchText, Mode=TwoWay}"
-               BackgroundColor="#F0F0F0"
+               BackgroundColor="#FFFFFF"
                FontSize="16"
                TextColor="#202124"/>
 
-    <!-- Tasks list -->
-    <CollectionView Grid.Row="1"
-                    ItemsSource="{Binding FilteredTasks}">
-      <CollectionView.ItemTemplate>
-        <DataTemplate x:DataType="viewModel:TaskItemViewModel">
-          <SwipeView>
-            <SwipeView.RightItems>
-              <SwipeItems Mode="Reveal">
-                <SwipeItem Text="Delete"
-                           IconImageSource="delete.png"
-                           BackgroundColor="#f44336"
-                           Command="{Binding DeleteCommand}"/>
-              </SwipeItems>
-            </SwipeView.RightItems>
+    <RefreshView Grid.Row="1"
+                 Command="{Binding LoadTasksAsyncCommand}"
+                 IsRefreshing="{Binding IsBusy}">
 
-            <Frame CornerRadius="16"
-                   HasShadow="True"
-                   BorderColor="#E0E0E0"
-                   BackgroundColor="White"
-                   Padding="16,12"
-                   Margin="0,4">
+      <CollectionView ItemsSource="{Binding FilteredTasks}">
+        <CollectionView.EmptyView>
+          <StackLayout VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       Padding="40">
+            <Label Text="You haven't created any tasks yet."
+                   TextColor="#5F6368"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Tap the 'Add' button above to create your first task."
+                   TextColor="#5F6368"
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"
+                   Margin="0, 5, 0, 0"/>
+          </StackLayout>
+        </CollectionView.EmptyView>
 
-              <Grid RowDefinitions="Auto,Auto"
-                    ColumnDefinitions="*,Auto">
-                <!-- Title -->
-                <Label Grid.Row="0"
-                       Grid.Column="0"
-                       Text="{Binding Title}"
-                       FontSize="18"
-                       FontAttributes="Bold"
-                       TextColor="#202124"
-                       VerticalOptions="Center"/>
+        <CollectionView.ItemTemplate>
+          <DataTemplate x:DataType="{x:Type model:UserTask}">
+            <SwipeView>
+              <SwipeView.RightItems>
+                <SwipeItems Mode="Reveal">
+                  <SwipeItem Text="Delete"
+                             IconImageSource="delete.png"
+                             BackgroundColor="#f44336"
+                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:TasksViewModel}}, Path=DeleteCommand}"
+                             CommandParameter="{Binding .}"/>
+                  <SwipeItem Text="Archive"
+                             IconImageSource="archive.png"
+                             BackgroundColor="#FFE8CA1F"
+                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:TasksViewModel}}, Path=ArchiveCommand}"
+                             CommandParameter="{Binding .}"/>
+                </SwipeItems>
+              </SwipeView.RightItems>
 
-                <!-- Edit button -->
-                <ImageButton Grid.Row="0"
-                             Grid.Column="1"
-                             Source="edit.png"
-                             BackgroundColor="Transparent"
-                             WidthRequest="20"
-                             HeightRequest="20"
-                             Command="{Binding EditCommand}"
-                             HorizontalOptions="End"
-                             VerticalOptions="Center"
-                             Padding="4"/>
+              <Border StrokeShape="RoundRectangle 16"
+                      StrokeThickness="1"
+                      Stroke="#E0E0E0"
+                      BackgroundColor="White"
+                      Padding="16,12"
+                      Margin="0,4">
 
-                <!-- Meta info -->
-                <StackLayout Grid.Row="1"
-                             Grid.Column="0"
-                             Grid.ColumnSpan="2"
-                             Orientation="Horizontal"
-                             Spacing="8"
-                             Margin="0,6,0,0">
-                  <Label Text="{Binding Date, StringFormat='{0:dd MMM yyyy HH:mm}'}"
-                         FontSize="13"
-                         TextColor="#777"/>
-                  <Label Text="•"
-                         FontSize="13"
-                         TextColor="#CCC"/>
-                  <Label Text="{Binding Type}"
-                         FontSize="13"
-                         TextColor="#777"/>
-                </StackLayout>
-              </Grid>
-            </Frame>
-          </SwipeView>
-        </DataTemplate>
-      </CollectionView.ItemTemplate>
-    </CollectionView>
+
+
+                <Border.GestureRecognizers>
+                  <TapGestureRecognizer
+                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:TasksViewModel}}, Path=OpenTaskModalCommand}"
+                    CommandParameter="{Binding .}"/>
+                </Border.GestureRecognizers>
+
+                <Grid RowDefinitions="Auto,Auto"
+                      ColumnDefinitions="*,Auto">
+                  <Label Grid.Row="0"
+                         Grid.Column="0"
+                         Text="{Binding Title}"
+                         FontSize="18"
+                         FontAttributes="Bold"
+                         TextColor="#202124"
+                         VerticalOptions="Center"/>
+                  <StackLayout Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               Orientation="Horizontal"
+                               Spacing="8"
+                               Margin="0,6,0,0">
+                    <Label Text="{Binding Date, StringFormat='{0:dd MMM yyyy HH:mm}'}"
+                           FontSize="13"
+                           TextColor="#777"/>
+                    <Label Text="•"
+                           FontSize="13"
+                           TextColor="#CCC"/>
+                    <Label Text="{Binding Type}"
+                           FontSize="13"
+                           TextColor="#777"/>
+                  </StackLayout>
+                </Grid>
+              </Border>
+            </SwipeView>
+          </DataTemplate>
+        </CollectionView.ItemTemplate>
+      </CollectionView>
+    </RefreshView>
+
   </Grid>
 </ContentPage>

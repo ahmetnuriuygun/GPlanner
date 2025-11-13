@@ -3,12 +3,21 @@ namespace GPlanner.Core.Model;
 public class User
 {
     public int Id;
-    public string Username { get; set; }
 
-    public User(string username)
+    public string Name { get; set; } = string.Empty;
+    public string Username { get; set; } = string.Empty;
+
+    public string SchoolName { get; set; } = string.Empty;
+
+    public DateTime BirthDate { get; set; }
+
+    public bool IsNotified { get; set; }
+
+    public ICollection<UserTask> UserTasks { get; set; } = new List<UserTask>();
+
+    public User()
     {
-        this.Id = 1;
-        this.Username = username;
+
     }
 
 

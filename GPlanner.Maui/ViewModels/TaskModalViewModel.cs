@@ -12,39 +12,49 @@ namespace GPlanner.Maui.ViewModels
     public partial class TaskModalViewModel : ObservableObject
     {
         private readonly IUserTaskService _taskService;
-        private readonly IMapper _mapper;
         private readonly TasksViewModel _parentViewModel;
 
         [ObservableProperty]
         private bool isEditMode;
 
         [ObservableProperty]
-        private UserTaskUpdateDto activeTask = new UserTaskUpdateDto();
+        private UserTask activeTask = new UserTask();
 
         [ObservableProperty]
         private TimeSpan newTaskTime = DateTime.Now.TimeOfDay;
 
+        [ObservableProperty]
+        private DateTime minDate = DateTime.Now.Date;
+
+        [ObservableProperty]
+        private DateTime maxDate = DateTime.Now.Date.AddYears(1);
+
         public Array TaskTypes => Enum.GetValues(typeof(TaskType));
 
-        public TaskModalViewModel(IUserTaskService taskService, IMapper mapper, TasksViewModel parentViewModel)
+        [ObservableProperty]
+        private int priority;
+        public TaskModalViewModel(IUserTaskService taskService, TasksViewModel parentViewModel)
         {
             _taskService = taskService;
-            _mapper = mapper;
             _parentViewModel = parentViewModel;
+            minDate = DateTime.Now.Date;
+            maxDate = DateTime.Now.Date.AddYears(1);
         }
 
-        public void Initialize(UserTaskReadDto? dto)
+        public void Initialize(UserTask? taskToEdit)
         {
-            if (dto != null)
+            if (taskToEdit != null)
             {
                 IsEditMode = true;
-                ActiveTask = _mapper.Map<UserTaskUpdateDto>(dto);
-                NewTaskTime = dto.Date.TimeOfDay;
+                ActiveTask = taskToEdit;
+                Priority = taskToEdit.Priority;
+                NewTaskTime = taskToEdit.Date.TimeOfDay;
             }
             else
             {
                 IsEditMode = false;
-                ActiveTask = new UserTaskUpdateDto { UserId = 1, Date = DateTime.Now.Date };
+                ActiveTask = new UserTask { UserId = 1, Date = DateTime.Now.Date };
+                Priority = 3;
                 NewTaskTime = DateTime.Now.TimeOfDay;
             }
         }
@@ -52,58 +62,63 @@ namespace GPlanner.Maui.ViewModels
         [RelayCommand]
         public async Task AddOrSaveAsync()
         {
+            if (string.IsNullOrWhiteSpace(ActiveTask.Title))
+            {
+                await Shell.Current.DisplayAlert("Validation Error", "Please enter a task title.", "OK");
+                return;
+            }
+
+            if (ActiveTask.Type == 0)
+            {
+                await Shell.Current.DisplayAlert("Validation Error", "Please select a task type.", "OK");
+                return;
+            }
+
             ActiveTask.Date = ActiveTask.Date.Date + NewTaskTime;
 
             bool success = false;
+            string action = IsEditMode ? "updated" : "created";
 
-            try
+
+            if (IsEditMode)
             {
-                if (IsEditMode)
-                {
 
-                    var entity = _mapper.Map<UserTask>(ActiveTask);
+                success = await _taskService.UpdateTaskAsync(ActiveTask);
 
-                    if (entity.TaskId == 0)
-                    {
-                        System.Diagnostics.Debug.WriteLine("Update failed: TaskId is 0. Data flow error.");
-                        await Shell.Current.DisplayAlert("Error", "Cannot save task: Task ID is missing.", "OK");
-                        return;
-                    }
-                    success = await _taskService.UpdateTaskAsync(entity);
-                }
-                else
-                {
-
-                    var createDto = _mapper.Map<UserTaskCreateDto>(ActiveTask);
-                    createDto.UserId = 1;
-                    var entity = _mapper.Map<UserTask>(createDto);
-                    success = await _taskService.CreateTaskAsync(entity);
-                }
-
-                if (success)
-                {
-                    await _parentViewModel.LoadTasksAsync();
-                }
-                else
-                {
-                    await Shell.Current.DisplayAlert("Error", "Task could not be saved. Check API connection.", "OK");
-                }
             }
-            catch (Exception ex)
+            else
             {
-                System.Diagnostics.Debug.WriteLine($"Error during AddOrSaveAsync: {ex}");
-                await Shell.Current.DisplayAlert("Fatal Error", "An unexpected error occurred while saving.", "OK");
-            }
-            finally
-            {
-                await Shell.Current.Navigation.PopModalAsync();
-            }
-        }
+                ActiveTask.UserId = 1;
+                success = await _taskService.CreateTaskAsync(ActiveTask);
 
-        [RelayCommand]
-        async Task CancelAsync()
-        {
+            }
+
+            if (success)
+            {
+                await _parentViewModel.LoadTasksAsync();
+
+                string message = $"Task successfully {action}. To include this task in your daily schedule, please generate a new AI plan on the To Do page.";
+                await Shell.Current.DisplayAlert("Success", message, "OK");
+
+            }
+            else
+            {
+                await Shell.Current.DisplayAlert("Error", "Task could not be saved. Check API connection.", "OK");
+            }
+
+
+
             await Shell.Current.Navigation.PopModalAsync();
         }
+
+        partial void OnPriorityChanged(int value)
+        {
+            if (ActiveTask != null)
+                ActiveTask.Priority = value;
+        }
+
+
+
+
     }
 }

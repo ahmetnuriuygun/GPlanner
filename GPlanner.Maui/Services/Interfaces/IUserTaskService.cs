@@ -10,5 +10,7 @@ namespace GPlanner.Maui.Interfaces
         Task<bool> CreateTaskAsync(UserTask newTask);
         Task<bool> UpdateTaskAsync(UserTask updatedTask);
 
+        Task<bool> ArchiveTaskAsync(int taskId);
+
     }
 }
