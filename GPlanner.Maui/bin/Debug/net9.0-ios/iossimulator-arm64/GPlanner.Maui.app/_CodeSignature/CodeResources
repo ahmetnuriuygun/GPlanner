@@ -26,19 +26,19 @@
 		</data>
 		<key>GPlanner.Core.dll</key>
 		<data>
-		yw47mMsW6xNM9JEth+L/WYFGaIU=
+		nsTQM+azzPs08Kc+WmhuMfRw7o4=
 		</data>
 		<key>GPlanner.Core.pdb</key>
 		<data>
-		E6VaE/Q5F22uwy2ET7VOVSH+Lqo=
+		5L4/aFuseYA6duFGCPoTlZ1jBDI=
 		</data>
 		<key>GPlanner.Maui.dll</key>
 		<data>
-		MK1X8EZ9jBKOZtzLLcxQLpA5j2c=
+		0mS/G8hJ/VmTPuD2CNKgpWyUlwk=
 		</data>
 		<key>GPlanner.Maui.pdb</key>
 		<data>
-		8lIiqqQnt4CW+72SlcsuxnHHvPs=
+		xLs01z8ZITIBOG+kPHiEOERnuxI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -60,9 +60,77 @@
 		<data>
 		ZVgM1+KwZcZnwhgaI0F7Bt1ba2c=
 		</data>
+		<key>Microsoft.AspNetCore.Authentication.Abstractions.dll</key>
+		<data>
+		zkRekqkrx1S/22X8ygQIoZD9J1k=
+		</data>
+		<key>Microsoft.AspNetCore.Authentication.Core.dll</key>
+		<data>
+		HB66QL+2sTncQhi8ccLG/7/SiJI=
+		</data>
+		<key>Microsoft.AspNetCore.Authorization.Policy.dll</key>
+		<data>
+		Gh7wvF1fsRVu4OSnBAYSRfoK45c=
+		</data>
+		<key>Microsoft.AspNetCore.Authorization.dll</key>
+		<data>
+		wnvJzzD9Pw0J/R/WMBaZCEOvXFQ=
+		</data>
+		<key>Microsoft.AspNetCore.Hosting.Abstractions.dll</key>
+		<data>
+		NLXVeL0cH7D9Ka26+OJwkJqAPPs=
+		</data>
+		<key>Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</key>
+		<data>
+		kQ7uQnUwV+PhhJOR5f1HRsH4drM=
+		</data>
+		<key>Microsoft.AspNetCore.Http.Abstractions.dll</key>
+		<data>
+		C1Z5tjISKnX5HxUc+I1j9nKHW+4=
+		</data>
+		<key>Microsoft.AspNetCore.Http.Extensions.dll</key>
+		<data>
+		8dAyW4l6/BXHvam6NGRigkRSFpQ=
+		</data>
+		<key>Microsoft.AspNetCore.Http.Features.dll</key>
+		<data>
+		eQuPkc8GiLkhUhEjBbnAdsy32Ik=
+		</data>
+		<key>Microsoft.AspNetCore.Http.dll</key>
+		<data>
+		tx3px4EWQUhQgEPjtcjejmzHe6I=
+		</data>
+		<key>Microsoft.AspNetCore.Mvc.Abstractions.dll</key>
+		<data>
+		PMMImh7p4uuoQCFGLW49r2TNYx4=
+		</data>
+		<key>Microsoft.AspNetCore.Mvc.Core.dll</key>
+		<data>
+		tUZ8U2pjSeFVbEuDWyG9TJDFFec=
+		</data>
+		<key>Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</key>
+		<data>
+		6awB1D8FKufdkNxfxqB/fa9ljec=
+		</data>
+		<key>Microsoft.AspNetCore.Routing.Abstractions.dll</key>
+		<data>
+		XTu0J18lxv7SlQpMF6Q6LL9rdgQ=
+		</data>
+		<key>Microsoft.AspNetCore.Routing.dll</key>
+		<data>
+		/fPgPycPvKvDqy6FlWT609I0254=
+		</data>
+		<key>Microsoft.AspNetCore.WebUtilities.dll</key>
+		<data>
+		kt7uIENQx8Ap9ZBUsRXL7Y/98eY=
+		</data>
 		<key>Microsoft.CSharp.dll</key>
 		<data>
 		3yW88Uw/2YZO3Xov1WuodcEjzjU=
+		</data>
+		<key>Microsoft.DotNet.PlatformAbstractions.dll</key>
+		<data>
+		1jMzr/KGH5/Dnzq13nW3yNbdM0A=
 		</data>
 		<key>Microsoft.Extensions.Configuration.Abstractions.dll</key>
 		<data>
@@ -80,6 +148,18 @@
 		<data>
 		7eEk88PjmhpHImmOQlSzNwX3tyg=
 		</data>
+		<key>Microsoft.Extensions.DependencyModel.dll</key>
+		<data>
+		WymHTu+DqggciWr4zWhRUkAtG6c=
+		</data>
+		<key>Microsoft.Extensions.FileProviders.Abstractions.dll</key>
+		<data>
+		uLckQ8DjjdP9EH0vf91K+ST45Hw=
+		</data>
+		<key>Microsoft.Extensions.Hosting.Abstractions.dll</key>
+		<data>
+		j01Ef25bxEKVNRfb9VmM18zZRaY=
+		</data>
 		<key>Microsoft.Extensions.Logging.Abstractions.dll</key>
 		<data>
 		kfo1XIJxW+jzAiN2phsnY2m2Aqg=
@@ -92,6 +172,10 @@
 		<data>
 		9xPuq/W3Lh+qO/n7rEjNvW7Vf0o=
 		</data>
+		<key>Microsoft.Extensions.ObjectPool.dll</key>
+		<data>
+		AmQK0tBXi/sK3iUivjkUKFevsV0=
+		</data>
 		<key>Microsoft.Extensions.Options.dll</key>
 		<data>
 		p7uFaOnuAaCHejheOsMtculIu2E=
@@ -102,7 +186,7 @@
 		</data>
 		<key>Microsoft.Maui.Controls.HotReload.Forms.dll</key>
 		<data>
-		SPawDJ8u5vSm3tKIDifItv/Oblk=
+		9LoMTvcyN1kiYhByT2vfxt+SUj4=
 		</data>
 		<key>Microsoft.Maui.Controls.Xaml.dll</key>
 		<data>
@@ -124,6 +208,10 @@
 		<data>
 		4ea6OPgG/iGtGb1yvaCGhFp3ojg=
 		</data>
+		<key>Microsoft.Net.Http.Headers.dll</key>
+		<data>
+		8E7qesE630IkGZ1jYlc7hm6R65c=
+		</data>
 		<key>Microsoft.VisualBasic.Core.dll</key>
 		<data>
 		RT4F+TRMsgzuOlcmUDGGGQ6AeCs=
@@ -134,15 +222,15 @@
 		</data>
 		<key>Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll</key>
 		<data>
-		luAv+aez1PcJu9HKrsmrRwQzYEk=
+		Cbc74J3yiS5zABQOxDq16niMnws=
 		</data>
 		<key>Microsoft.VisualStudio.DesignTools.TapContract.dll</key>
 		<data>
-		LZK/OV4H7o28yB9332BKAU7JOUc=
+		Rtw66+P4QAZgITGPF9MPCn0jhyw=
 		</data>
 		<key>Microsoft.VisualStudio.DesignTools.XamlTapContract.dll</key>
 		<data>
-		leIHymWsH5ctZZyPAY901VAAJXs=
+		AaMFsTZonPpGggcPEZcYj6un1c4=
 		</data>
 		<key>Microsoft.Win32.Primitives.dll</key>
 		<data>
@@ -163,6 +251,10 @@
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
+		</data>
+		<key>Newtonsoft.Json.dll</key>
+		<data>
+		U9CjuRA2CSEy9NCIdQC13HeJHXg=
 		</data>
 		<key>OpenSans-Regular.ttf</key>
 		<data>
@@ -852,9 +944,29 @@
 		<data>
 		jdWOGhmimhu0JfGybB1ed3IRNGM=
 		</data>
+		<key>archive.png</key>
+		<data>
+		4AjXnaHiC7x0NDc7pDidzqHerG8=
+		</data>
+		<key>arrow_left.png</key>
+		<data>
+		zI29GxUkH88pquzZQUPP05be24A=
+		</data>
+		<key>arrow_right.png</key>
+		<data>
+		hqxDJEFyjiA+rVDbX+NAMRiwf/U=
+		</data>
 		<key>ca/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
 		pXvJ/+mx6qM/vyncMpL30ImHfNs=
+		</data>
+		<key>check_circle_filled.png</key>
+		<data>
+		MnUa/6LOeVgyxUPzthsDu0APEMU=
+		</data>
+		<key>circle_outline.png</key>
+		<data>
+		7U3+HLTsF1PS4eZVjkremphcmWg=
 		</data>
 		<key>cs/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
@@ -903,6 +1015,10 @@
 		<key>fr/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
 		cpJwe/SBm27YJpRN/n6LuNnS03E=
+		</data>
+		<key>gemini.png</key>
+		<data>
+		RBVH5O+1Ku+7TanNQYlZywrwGnE=
 		</data>
 		<key>he/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
@@ -1003,6 +1119,10 @@
 		<key>pl/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
 		a85fZ2hO+DQp939lCTwI+I8MV3A=
+		</data>
+		<key>profile.png</key>
+		<data>
+		fjyo9XZPvHwYXQxUEmRwfWbzjy0=
 		</data>
 		<key>pt-BR/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
@@ -1114,28 +1234,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SxyS5pA2BFBypjE2W48uUYUKQg691Vcxx5DOulewtYQ=
+			Y6A8puRgwRARxWgC3DC/+HCfuwD8EZOUqAdKl0hx4Ak=
 			</data>
 		</dict>
 		<key>GPlanner.Core.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jnasoqCDQk9sj+Hu6essPtEBOPLwEKGGQpu9rMJr/M8=
+			hyNc09IlErUgptxRDgDIx7S1eVp0avEjYFbP2QwR3E4=
 			</data>
 		</dict>
 		<key>GPlanner.Maui.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bpJQa8NVMZSGOubZAY4SFFpOeDVRXsln54k0Fsu3rWo=
+			Xu297n33K6zBrU7W4rJi69qaiaLImbshwDWl7VAri0o=
 			</data>
 		</dict>
 		<key>GPlanner.Maui.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FUgjEcWuFqDY9HbQi+zxH1SmygHSNRRMnq8sYcxuecQ=
+			xeBw17Mh0KVPl75tTZemTsmLlrj3TLhDeJZU8wAMyIc=
 			</data>
 		</dict>
 		<key>MauiInfo.plist</key>
@@ -1166,11 +1286,130 @@
 			VPNjf2cf66XxnoLsT0p/tEi7PPwPsYDwiapXH8jwU+I=
 			</data>
 		</dict>
+		<key>Microsoft.AspNetCore.Authentication.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iw51tdKcETC5QqlJLWett1iPlLZgUrRdZfkV7EoaD4k=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Authentication.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NP2svkDxlIVJsMiWAmj552NCYo4j7YnOUr2+jkz5+pc=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Authorization.Policy.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4f7xvTVUxi0h0P0Hci5blPefIu8mspp/qgcIrxhfvdU=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Authorization.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nlfPDC0MQhvdlCluZr8ztb/b9m9BojooK/JAVsI+7EA=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Hosting.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4VEnr/VXawxchLjnFr86t8XA5fF3ZLb61F6I54GBAoQ=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3FWyABkOEBeAcg6oyNO1PytWU+vm8OBnbxtkWVup0TI=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Http.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qFKmKNr9iAZiZxOVvLJBfMhkKfDy1GvY81fHh1hiphU=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Http.Extensions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dsGZ+sGJdrYngMg72CIF31THFtl6ovcKTjtGtj9orn8=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Http.Features.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J2xQUZ4BD6tsrQkvGS5HDQfkTGMzmaS76TA9nJrtCpg=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Http.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rL7yDIoSBIK2HEpXD/iOhoUrVkI3rsR07sn5BA5ddUg=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Mvc.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2ZTJ3DDWIlT8zmUz46ry3ejC+qjXXqokBlQMq3pQ0ac=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Mvc.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			abtsWYHyiDSnb3/mrnQHPAAVb7iJKoWQPQYK+gLSn8w=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RH648J556xp2UcR5qr7b4zB7s4gMzwxjFHGxfZc7I0A=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Routing.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qZRVEWfcR+k4p8USVOwZOOhVCCUvpVy2lySCkukS8fs=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.Routing.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hweS4gRZD13y7p9975vuZvS08549STJlBClVrHiCMXc=
+			</data>
+		</dict>
+		<key>Microsoft.AspNetCore.WebUtilities.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D5akJeBd7NNITuzAXxlX7zl2jfsc4uTKyeEKwwNhqoo=
+			</data>
+		</dict>
 		<key>Microsoft.CSharp.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			OFIXVKdYs5AeX6vCMvDfSF/yGwgNNbIjll2TUfB8noY=
+			</data>
+		</dict>
+		<key>Microsoft.DotNet.PlatformAbstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ucB9cWNpHPmRNINsdPy37WDpMEpF4YCZDo21haOYFl4=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Configuration.Abstractions.dll</key>
@@ -1201,6 +1440,27 @@
 			YIG3d91GAPSeUw/RF2GIXIerGhdhPBgYSq3vt97hAb4=
 			</data>
 		</dict>
+		<key>Microsoft.Extensions.DependencyModel.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XWpybHUpZ8wVphhIR9fG6hmRgW2ZyVhXT6PfvOI7tsg=
+			</data>
+		</dict>
+		<key>Microsoft.Extensions.FileProviders.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wk5VqpwPTjlQtQgOMUwRS0l4eKKYXKW0lnlLTi1kmpU=
+			</data>
+		</dict>
+		<key>Microsoft.Extensions.Hosting.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/GeZD7RNA8nGEyPjYq77dJAkGSlj2HzJnqzM9bRoRJ8=
+			</data>
+		</dict>
 		<key>Microsoft.Extensions.Logging.Abstractions.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1222,6 +1482,13 @@
 			iEmKl+AvQbvz8gaHLwV3SmOO7AdiOhBLTO98PNMQxcQ=
 			</data>
 		</dict>
+		<key>Microsoft.Extensions.ObjectPool.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UCVqOmu+z9/M5Wahsgr7zKRWdGQWNvXGWLlEa1gkFuw=
+			</data>
+		</dict>
 		<key>Microsoft.Extensions.Options.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1240,7 +1507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWFvQUbrEKy5gYQN4OHirpPzVf6lfmWo8M5EDnvJJHE=
+			VVeB2W4DanTiDPGY4wBgK9GQtvqTTxcT99ZQx5gLTtA=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Controls.Xaml.dll</key>
@@ -1278,6 +1545,13 @@
 			Oj9tJaTmd308XheWsoR3CAVdnFZqZo3lWFjyy+H6nRA=
 			</data>
 		</dict>
+		<key>Microsoft.Net.Http.Headers.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=
+			</data>
+		</dict>
 		<key>Microsoft.VisualBasic.Core.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1296,21 +1570,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			exoJIWO+xZR7QYGcJrIpooCoAw0EWs6//Al7YTkXnVc=
+			tkqrdKLsXpmR8Idl0bTuv3lN4EquILhUsflRwo+DQHc=
 			</data>
 		</dict>
 		<key>Microsoft.VisualStudio.DesignTools.TapContract.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sFZ0RIZ9MawV847xJ0Eux85HB7wkdqvr52ZWZ7OatbM=
+			gY4UPEIGZ948PsFqIaLYPQAqoEyvMxxA04Gz2zwX5gY=
 			</data>
 		</dict>
 		<key>Microsoft.VisualStudio.DesignTools.XamlTapContract.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NHj1lE0oL04MxhIOGiP2kynvmTTN5PWl6mzs02Lvjiw=
+			wElwgSmk/Wlh7i5gBBNJD7bS6y5kWjVWGBXkfQlywoo=
 			</data>
 		</dict>
 		<key>Microsoft.Win32.Primitives.dll</key>
@@ -1346,6 +1620,13 @@
 			<key>hash2</key>
 			<data>
 			n/NMp5DkQGppkjpBoyoV1mhEK36L/cuHFrOabOQafS0=
+			</data>
+		</dict>
+		<key>Newtonsoft.Json.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XZbuUbKv9ZIDnuvC7SA9n1X935wIgvs00/DgeDdJVKU=
 			</data>
 		</dict>
 		<key>OpenSans-Regular.ttf</key>
@@ -2545,11 +2826,46 @@
 			JGvNI42neMy1J7APBYfnC0YYGaszA9216wRhdlZKhwQ=
 			</data>
 		</dict>
+		<key>archive.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WopMCcXtU6zD21PNsjML/r/NYGYzVWpi47X50xTjcK8=
+			</data>
+		</dict>
+		<key>arrow_left.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gGJl5wttYsHbZgOF0rMXUD4bJdX7FLsVmOvHaIX8l68=
+			</data>
+		</dict>
+		<key>arrow_right.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ibfMZeN3Mo5P3QAHPirIHsRmQiKfYAWbUO628AZ1WFY=
+			</data>
+		</dict>
 		<key>ca/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			SsFBhLELiambJwSoubH3EnschL+Ms6kK4SKUGx42rp0=
+			</data>
+		</dict>
+		<key>check_circle_filled.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JFeqMhmjHACUdt53/rjioRxuhOpFAGTXXluvBoCD+60=
+			</data>
+		</dict>
+		<key>circle_outline.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bsx7TrMHd3lWqkjLqoC4KYq3JtWNuUHNaJfRBFfzFtA=
 			</data>
 		</dict>
 		<key>cs/Microsoft.Maui.Controls.resources.dll</key>
@@ -2634,6 +2950,13 @@
 			<key>hash2</key>
 			<data>
 			naFMFL0wHxM9XezhelH0vG2iE5AMQ/1RXMWMb/FymzY=
+			</data>
+		</dict>
+		<key>gemini.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pmYSffpIGJceCWlr/KYyJ4EUZde59ft3wmxXdOqTmHY=
 			</data>
 		</dict>
 		<key>he/Microsoft.Maui.Controls.resources.dll</key>
@@ -2809,6 +3132,13 @@
 			<key>hash2</key>
 			<data>
 			jIIyscGAWpk/Df1GKssw/c5HZRXkflsA+eLLlYOO8bw=
+			</data>
+		</dict>
+		<key>profile.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bBrmbhez+RZPh+cTSNz7TDLGlxbWrGLUGC9NZ/Wzigw=
 			</data>
 		</dict>
 		<key>pt-BR/Microsoft.Maui.Controls.resources.dll</key>

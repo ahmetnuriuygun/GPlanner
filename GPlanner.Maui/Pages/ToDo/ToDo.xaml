@@ -1,13 +1,155 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GPlanner.Maui.Pages.ToDoPage"
              xmlns:viewModel="clr-namespace:GPlanner.Maui.ViewModels"
-             x:DataType="viewModel:ToDoViewModel">
+             xmlns:model="clr-namespace:GPlanner.Core.Model;assembly=GPlanner.Core"
+             xmlns:converters="clr-namespace:GPlanner.Maui.Converters"
+             x:Class="GPlanner.Maui.Pages.ToDoPage"
+             x:DataType="viewModel:ToDoViewModel"
+             Title="AI Generated TO DO List">
 
-    <ContentPage.BindingContext>
-        <viewModel:ToDoViewModel/>
-    </ContentPage.BindingContext>
+       <ContentPage.Resources>
+              <converters:InvertedBooleanConverter x:Key="InvertedBooleanConverter"/>
 
+              <DataTemplate x:Key="TaskItemTemplate"
+                            x:DataType="{x:Type model:ScheduledTask}">
+                     <SwipeView>
+                            <SwipeView.GestureRecognizers>
+                                   <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:ToDoViewModel}}, Path=ToggleTaskStatusCommand}"
+                                                         CommandParameter="{Binding Id}"/>
+                            </SwipeView.GestureRecognizers>
 
+                            <Border Margin="0,4"
+                                    Padding="12"
+                                    StrokeShape="RoundRectangle 8"
+                                    StrokeThickness="1"
+                                    BackgroundColor="White"
+                                    Stroke="#F0F0F0">
+
+                                   <Grid ColumnDefinitions="Auto, *, Auto, Auto"
+                                         RowDefinitions="Auto">
+
+                                          <Image Grid.Column="0"
+                                                 Margin="0,0,10,0"
+                                                 WidthRequest="20"
+                                                 HeightRequest="20"
+                                                 Source="{Binding IsCompleted, Converter={StaticResource InvertedBooleanConverter}, ConverterParameter='check_circle_filled.png|circle_outline.png'}"/>
+
+                                          <Label Grid.Column="2"
+                                                 Text="{Binding StartTime, StringFormat='{0:HH:mm}'}"
+                                                 FontSize="13"
+                                                 FontAttributes="Bold"
+                                                 TextColor="#5F6368"
+                                                 VerticalOptions="Center"
+                                                 Margin="10,0,0,0"/>
+
+                                          <Label Grid.Column="1"
+                                                 Text="{Binding Title}"
+                                                 FontSize="16"
+                                                 VerticalOptions="Center"/>
+
+                                   </Grid>
+                            </Border>
+                     </SwipeView>
+              </DataTemplate>
+       </ContentPage.Resources>
+
+       <ContentPage.ToolbarItems>
+
+       </ContentPage.ToolbarItems>
+
+       <Grid RowDefinitions="Auto, Auto, Auto, *"
+             Padding="15">
+
+              <ImageButton Grid.Row="0"
+                           Grid.Column="0"
+                           Source="gemini.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           Margin="0,-5,0,0"
+                           Command="{Binding GenerateAIPlanCommand}"
+                           IsEnabled="{Binding IsBusy, Converter={StaticResource InvertedBooleanConverter}}"
+                           BackgroundColor="Transparent"
+                           ZIndex="10"/>
+
+              <Border Grid.Row="0"
+                      Grid.ColumnSpan="2"
+                      Padding="10, 5"
+                      Margin="0, 0, 0, 10"
+                      StrokeShape="RoundRectangle 8"
+                      HorizontalOptions="End"
+                      StrokeThickness="0"
+                      BackgroundColor="#F0F0F0">
+                     <Label Text="{Binding LastGenerationDate, StringFormat='Last Generated: {0}'}"
+                                   FontSize="12"
+                            TextColor="#5F6368"
+                            HorizontalTextAlignment="Start"/>
+              </Border>
+
+              <Grid Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    ColumnDefinitions="*, Auto, *"
+                    Margin="0, 5, 0, 15">
+
+                     <Button Grid.Column="0"
+                             FontSize="10"
+                             BackgroundColor="Transparent"
+                             TextColor="#1A73E8"
+                             ImageSource="arrow_left.png"
+                             Command="{Binding NavigateDayCommand}"
+                             CommandParameter="-1"/>
+
+                     <Label Grid.Column="1"
+                            Text="{Binding TodayDateText}"
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            TextColor="#202124"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="15, 0"/>
+
+                     <Button Grid.Column="2"
+                             FontSize="10"
+                             BackgroundColor="Transparent"
+                             ImageSource="arrow_right.png"
+                             Command="{Binding NavigateDayCommand}"
+                             CommandParameter="1"/>
+              </Grid>
+
+              <RefreshView Grid.Row="2"
+                           Grid.ColumnSpan="3"
+                           Command="{Binding LoadDailyPlansAsyncCommand}"
+                           IsRefreshing="{Binding IsBusy}">
+                     <CollectionView ItemsSource="{Binding CurrentDayTasks}"
+                                     ItemTemplate="{StaticResource TaskItemTemplate}">
+                            <CollectionView.EmptyView>
+                                   <StackLayout VerticalOptions="Center"
+                                                HorizontalOptions="Center"
+                                                Padding="40">
+                                          <Label Text="No scheduled tasks for this day."
+                                                 TextColor="#5F6368"
+                                                 FontSize="18"
+                                                 HorizontalTextAlignment="Center"/>
+                                          <Label Text="Use the top menu to generate a plan or navigate to another day."
+                                                 TextColor="#5F6368"
+                                                 FontSize="14"
+                                                 HorizontalTextAlignment="Center"/>
+                                   </StackLayout>
+                            </CollectionView.EmptyView>
+                     </CollectionView>
+              </RefreshView>
+
+              <ActivityIndicator Grid.Row="0"
+                                 Grid.RowSpan="4"
+                                 Grid.ColumnSpan="3"
+                                 IsRunning="{Binding IsBusy}"
+                                 IsVisible="{Binding IsBusy}"
+                                 Color="#1A73E8"
+                                 VerticalOptions="Center"
+                                 BackgroundColor="#80FFFFFF"
+                                 ZIndex="20"/>
+
+       </Grid>
 </ContentPage>

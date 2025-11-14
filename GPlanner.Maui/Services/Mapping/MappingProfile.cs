@@ -5,21 +5,15 @@ using GPlanner.Maui.Services.Dtos;
 
 namespace GPlanner.Maui.Mapping
 {
-
-
     public class MappingProfile : Profile
     {
         public MappingProfile()
         {
-            CreateMap<UserTask, UserTaskReadDto>();
+            CreateMap<DaillyPlanDto, DailyPlanItem>()
+                           .ForMember(dest => dest.Tasks, opt => opt.MapFrom(src => src.Tasks));
 
-            CreateMap<UserTaskCreateDto, UserTask>()
-                .ForMember(dest => dest.TaskId, opt => opt.Ignore())
-                .ForMember(dest => dest.IsArchived, opt => opt.Ignore());
-
-            CreateMap<UserTaskUpdateDto, UserTask>();
-
-            CreateMap<UserTask, UserTaskUpdateDto>();
+            CreateMap<ScheduledTaskDto, ScheduledTask>()
+                .ForMember(dest => dest.DailyPlanItem, opt => opt.Ignore());
         }
     }
 }

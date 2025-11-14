@@ -7,15 +7,15 @@
     Title="GPlanner.Maui">
 
     <ShellContent
-        Title="Home"
+        Title="To Do"
         ContentTemplate="{DataTemplate local:ToDoPage}"
         Route="ToDo"/>
 
-    <ShellContent Title="User"
+    <ShellContent Title="Profile"
                   ContentTemplate="{DataTemplate local:UserPage}"
                   Route="user"/>
 
-    <ShellContent Title="Tasks"
+    <ShellContent Title="My Tasks"
                   ContentTemplate="{DataTemplate local:TasksPage}"
                   Route="tasks"/>
 

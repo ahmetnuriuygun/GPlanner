@@ -12,10 +12,6 @@
 		<data>
 		7Q7TN5yIlOavOULd2Ubm7c31Als=
 		</data>
-		<key>Resources/MauiInfo.plist</key>
-		<data>
-		iEtuUGCV6JM3gxS/pO33swhmpp8=
-		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		oowkf1sL6T19nanXUObgmuayWqM=
@@ -36,6 +32,26 @@
 		<data>
 		MpxHfDYfBIXik0uFDpIO5NLt/9Y=
 		</data>
+		<key>Resources/archive.png</key>
+		<data>
+		4AjXnaHiC7x0NDc7pDidzqHerG8=
+		</data>
+		<key>Resources/arrow_left.png</key>
+		<data>
+		zI29GxUkH88pquzZQUPP05be24A=
+		</data>
+		<key>Resources/arrow_right.png</key>
+		<data>
+		hqxDJEFyjiA+rVDbX+NAMRiwf/U=
+		</data>
+		<key>Resources/check_circle_filled.png</key>
+		<data>
+		MnUa/6LOeVgyxUPzthsDu0APEMU=
+		</data>
+		<key>Resources/circle_outline.png</key>
+		<data>
+		7U3+HLTsF1PS4eZVjkremphcmWg=
+		</data>
 		<key>Resources/delete.png</key>
 		<data>
 		heWYMmmR2Qo+clFq3uaM2x5ii5M=
@@ -55,6 +71,14 @@
 		<key>Resources/edit.png</key>
 		<data>
 		Q+QfK27HBDCLo0gqanrk8BK0nv4=
+		</data>
+		<key>Resources/gemini.png</key>
+		<data>
+		RBVH5O+1Ku+7TanNQYlZywrwGnE=
+		</data>
+		<key>Resources/profile.png</key>
+		<data>
+		fjyo9XZPvHwYXQxUEmRwfWbzjy0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -84,28 +108,140 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SxyS5pA2BFBypjE2W48uUYUKQg691Vcxx5DOulewtYQ=
+			MnprCrJUBakvtjkhPj1gxzFTb+g4ma9/wveaMSGrMJQ=
 			</data>
 		</dict>
 		<key>MonoBundle/GPlanner.Core.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jnasoqCDQk9sj+Hu6essPtEBOPLwEKGGQpu9rMJr/M8=
+			NuivuX464f8upEtl859bax87ASmnOlOk8+uwAap7n/U=
 			</data>
 		</dict>
 		<key>MonoBundle/GPlanner.Maui.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8zDtfh55d6+91fPpspqpjtqAYaL+QWc7Crco8J2AwOo=
+			CZbWbCtkf5Awv3TAOnSLV5v0DK1dF88i+eabAkfsPV8=
 			</data>
 		</dict>
 		<key>MonoBundle/GPlanner.Maui.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			es5M+K7GazohTyV5K1cWzWoXbwCgb/dIsZp06yAod/A=
+			SROmi79h2lEQ4hN25qhJ78ggGlW6d/ydPUrtHZG7sJE=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Authentication.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iw51tdKcETC5QqlJLWett1iPlLZgUrRdZfkV7EoaD4k=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Authentication.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NP2svkDxlIVJsMiWAmj552NCYo4j7YnOUr2+jkz5+pc=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Authorization.Policy.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4f7xvTVUxi0h0P0Hci5blPefIu8mspp/qgcIrxhfvdU=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Authorization.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nlfPDC0MQhvdlCluZr8ztb/b9m9BojooK/JAVsI+7EA=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Hosting.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4VEnr/VXawxchLjnFr86t8XA5fF3ZLb61F6I54GBAoQ=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3FWyABkOEBeAcg6oyNO1PytWU+vm8OBnbxtkWVup0TI=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Http.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qFKmKNr9iAZiZxOVvLJBfMhkKfDy1GvY81fHh1hiphU=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Http.Extensions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dsGZ+sGJdrYngMg72CIF31THFtl6ovcKTjtGtj9orn8=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Http.Features.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J2xQUZ4BD6tsrQkvGS5HDQfkTGMzmaS76TA9nJrtCpg=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Http.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rL7yDIoSBIK2HEpXD/iOhoUrVkI3rsR07sn5BA5ddUg=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Mvc.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2ZTJ3DDWIlT8zmUz46ry3ejC+qjXXqokBlQMq3pQ0ac=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Mvc.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			abtsWYHyiDSnb3/mrnQHPAAVb7iJKoWQPQYK+gLSn8w=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RH648J556xp2UcR5qr7b4zB7s4gMzwxjFHGxfZc7I0A=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Routing.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qZRVEWfcR+k4p8USVOwZOOhVCCUvpVy2lySCkukS8fs=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.Routing.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hweS4gRZD13y7p9975vuZvS08549STJlBClVrHiCMXc=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.AspNetCore.WebUtilities.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D5akJeBd7NNITuzAXxlX7zl2jfsc4uTKyeEKwwNhqoo=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -113,6 +249,13 @@
 			<key>hash2</key>
 			<data>
 			OFIXVKdYs5AeX6vCMvDfSF/yGwgNNbIjll2TUfB8noY=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.DotNet.PlatformAbstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ucB9cWNpHPmRNINsdPy37WDpMEpF4YCZDo21haOYFl4=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll</key>
@@ -143,6 +286,27 @@
 			YIG3d91GAPSeUw/RF2GIXIerGhdhPBgYSq3vt97hAb4=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Extensions.DependencyModel.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XWpybHUpZ8wVphhIR9fG6hmRgW2ZyVhXT6PfvOI7tsg=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Extensions.FileProviders.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wk5VqpwPTjlQtQgOMUwRS0l4eKKYXKW0lnlLTi1kmpU=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Extensions.Hosting.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/GeZD7RNA8nGEyPjYq77dJAkGSlj2HzJnqzM9bRoRJ8=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.Extensions.Logging.Abstractions.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -162,6 +326,13 @@
 			<key>hash2</key>
 			<data>
 			iEmKl+AvQbvz8gaHLwV3SmOO7AdiOhBLTO98PNMQxcQ=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Extensions.ObjectPool.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UCVqOmu+z9/M5Wahsgr7zKRWdGQWNvXGWLlEa1gkFuw=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.Extensions.Options.dll</key>
@@ -227,6 +398,13 @@
 			MTZw6HgdrD2WHmkqM750iMo76yyVbDH3e117d96RESY=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Net.Http.Headers.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.VisualBasic.Core.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -253,6 +431,13 @@
 			<key>hash2</key>
 			<data>
 			nyor0ND2ptsPu2ptKaZHhsF+6p7Hrk63W38sJHCM2EY=
+			</data>
+		</dict>
+		<key>MonoBundle/Newtonsoft.Json.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XZbuUbKv9ZIDnuvC7SA9n1X935wIgvs00/DgeDdJVKU=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1669,13 +1854,6 @@
 			n8hWbaTBYyIZSJHswRWq3jnOMQ8LDDhHRSCjgDYsLz4=
 			</data>
 		</dict>
-		<key>Resources/MauiInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
-			</data>
-		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
@@ -1711,6 +1889,41 @@
 			62G9rft1kp+00mHbpp5l5+SsO5lPoGjgBat+3xXTQVw=
 			</data>
 		</dict>
+		<key>Resources/archive.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WopMCcXtU6zD21PNsjML/r/NYGYzVWpi47X50xTjcK8=
+			</data>
+		</dict>
+		<key>Resources/arrow_left.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gGJl5wttYsHbZgOF0rMXUD4bJdX7FLsVmOvHaIX8l68=
+			</data>
+		</dict>
+		<key>Resources/arrow_right.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ibfMZeN3Mo5P3QAHPirIHsRmQiKfYAWbUO628AZ1WFY=
+			</data>
+		</dict>
+		<key>Resources/check_circle_filled.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JFeqMhmjHACUdt53/rjioRxuhOpFAGTXXluvBoCD+60=
+			</data>
+		</dict>
+		<key>Resources/circle_outline.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bsx7TrMHd3lWqkjLqoC4KYq3JtWNuUHNaJfRBFfzFtA=
+			</data>
+		</dict>
 		<key>Resources/delete.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1744,6 +1957,20 @@
 			<key>hash2</key>
 			<data>
 			hns/hE+Gc7fKrKOhy0hJuDCnUz2ATudOvcz7eXGQHrY=
+			</data>
+		</dict>
+		<key>Resources/gemini.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pmYSffpIGJceCWlr/KYyJ4EUZde59ft3wmxXdOqTmHY=
+			</data>
+		</dict>
+		<key>Resources/profile.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bBrmbhez+RZPh+cTSNz7TDLGlxbWrGLUGC9NZ/Wzigw=
 			</data>
 		</dict>
 	</dict>

@@ -22,6 +22,130 @@ namespace GPlanner.Data.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("GPlanner.Core.Model.DailyPlanItem", b =>
+                {
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("DayOfWeek")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<DateTime>("LastGenerated")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Date");
+
+                    b.ToTable("DaillyPlanItems", (string)null);
+                });
+
+            modelBuilder.Entity("GPlanner.Core.Model.ScheduledTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ActivityType")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("DailyPlanDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime?>("DailyPlanItemDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("time(6)");
+
+                    b.Property<bool>("IsCompleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("OriginalTaskTitle")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)")
+                        .HasAnnotation("Relational:JsonPropertyName", "originalTaskTitle");
+
+                    b.Property<int?>("OriginalUserTaskId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("time(6)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DailyPlanDate");
+
+                    b.HasIndex("DailyPlanItemDate");
+
+                    b.ToTable("ScheduledTasks", (string)null);
+                });
+
+            modelBuilder.Entity("GPlanner.Core.Model.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("BirthDate")
+                        .HasMaxLength(20)
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsNotified")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("SchoolName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BirthDate = new DateTime(2007, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsNotified = true,
+                            Name = "Victor De Marez",
+                            SchoolName = "Sint- - Franciscuscollege",
+                            Username = "victordemarez"
+                        });
+                });
+
             modelBuilder.Entity("GPlanner.Core.Model.UserTask", b =>
                 {
                     b.Property<int>("TaskId")
@@ -59,6 +183,8 @@ namespace GPlanner.Data.Migrations
 
                     b.HasKey("TaskId");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("UserTasks", (string)null);
 
                     b.HasData(
@@ -66,35 +192,123 @@ namespace GPlanner.Data.Migrations
                         {
                             TaskId = 1,
                             Date = new DateTime(2025, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Create slides for MAUI and ASP.NET API demonstration.",
+                            Description = "Prepare for the upcoming math exam on algebra and geometry.",
                             IsArchived = false,
                             Priority = 5,
-                            Title = "Prepare Project Defense Slides",
-                            Type = 3,
+                            Title = "Math Exam",
+                            Type = 0,
                             UserId = 1
                         },
                         new
                         {
                             TaskId = 2,
                             Date = new DateTime(2025, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Replace mock data with actual HTTP GET requests to the API.",
+                            Description = "Annual health check-up appointment at the clinic.",
                             IsArchived = false,
                             Priority = 4,
-                            Title = "Integrate API calls into ViewModels",
-                            Type = 0,
+                            Title = "Appointment with the doctor",
+                            Type = 3,
                             UserId = 1
                         },
                         new
                         {
                             TaskId = 3,
-                            Date = new DateTime(2025, 12, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Check prices for holiday travel.",
+                            Date = new DateTime(2025, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Submit the final report and presentation for the science project.",
                             IsArchived = false,
                             Priority = 3,
-                            Title = "Book flight tickets",
+                            Title = "Science Project Submission",
                             Type = 4,
-                            UserId = 2
+                            UserId = 1
+                        },
+                        new
+                        {
+                            TaskId = 4,
+                            Date = new DateTime(2025, 12, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "English spelling and grammar test.",
+                            IsArchived = false,
+                            Priority = 2,
+                            Title = "English Toets",
+                            Type = 1,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            TaskId = 5,
+                            Date = new DateTime(2025, 12, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Complete the history assignment on World War II.",
+                            IsArchived = false,
+                            Priority = 1,
+                            Title = "History Assignment",
+                            Type = 4,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            TaskId = 6,
+                            Date = new DateTime(2025, 12, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Routine dental check-up and cleaning.",
+                            IsArchived = false,
+                            Priority = 4,
+                            Title = "Dentist Appointment",
+                            Type = 3,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            TaskId = 7,
+                            Date = new DateTime(2025, 12, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Write and submit the lab report for the recent chemistry experiment.",
+                            IsArchived = false,
+                            Priority = 3,
+                            Title = "Chemistry Lab Report",
+                            Type = 4,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            TaskId = 8,
+                            Date = new DateTime(2025, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Prepare for the physics test on motion and forces.",
+                            IsArchived = false,
+                            Priority = 2,
+                            Title = "Physics Toets",
+                            Type = 1,
+                            UserId = 1
                         });
+                });
+
+            modelBuilder.Entity("GPlanner.Core.Model.ScheduledTask", b =>
+                {
+                    b.HasOne("GPlanner.Core.Model.DailyPlanItem", "DailyPlanItem")
+                        .WithMany()
+                        .HasForeignKey("DailyPlanDate")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("GPlanner.Core.Model.DailyPlanItem", null)
+                        .WithMany("Tasks")
+                        .HasForeignKey("DailyPlanItemDate");
+
+                    b.Navigation("DailyPlanItem");
+                });
+
+            modelBuilder.Entity("GPlanner.Core.Model.UserTask", b =>
+                {
+                    b.HasOne("GPlanner.Core.Model.User", null)
+                        .WithMany("UserTasks")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GPlanner.Core.Model.DailyPlanItem", b =>
+                {
+                    b.Navigation("Tasks");
+                });
+
+            modelBuilder.Entity("GPlanner.Core.Model.User", b =>
+                {
+                    b.Navigation("UserTasks");
                 });
 #pragma warning restore 612, 618
         }

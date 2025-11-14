@@ -8,6 +8,9 @@ namespace GPlanner.Maui.Pages
         {
             InitializeComponent();
             BindingContext = vm;
+
         }
+
+
     }
 }
