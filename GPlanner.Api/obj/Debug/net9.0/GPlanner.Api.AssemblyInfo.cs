@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5690dbf7-375d-4783-b732-10a6021aeae4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GPlanner.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b657d76c6ff3e5d8582d5762390a84e4fdc473b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e60fdfd97031cfb7d5cd3ed39468940e0db9d9d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPlanner.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPlanner.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
