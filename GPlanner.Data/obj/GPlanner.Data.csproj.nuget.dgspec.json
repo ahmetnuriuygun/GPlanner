@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj": {}
+    "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj": {}
   },
   "projects": {
-    "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
+    "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
+        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
         "projectName": "GPlanner.Core",
-        "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
+        "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
         "packagesPath": "/Users/ahmetnuriuygun/.nuget/packages/",
-        "outputPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/",
+        "outputPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahmetnuriuygun/.nuget/NuGet/NuGet.Config"
@@ -74,14 +74,14 @@
         }
       }
     },
-    "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj": {
+    "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj",
+        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj",
         "projectName": "GPlanner.Data",
-        "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj",
+        "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Data/GPlanner.Data.csproj",
         "packagesPath": "/Users/ahmetnuriuygun/.nuget/packages/",
-        "outputPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Data/obj/",
+        "outputPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahmetnuriuygun/.nuget/NuGet/NuGet.Config"
@@ -97,8 +97,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
-                "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
+              "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
+                "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
               }
             }
           }

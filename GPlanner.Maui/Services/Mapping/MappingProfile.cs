@@ -14,6 +14,8 @@ namespace GPlanner.Maui.Mapping
 
             CreateMap<ScheduledTaskDto, ScheduledTask>()
                 .ForMember(dest => dest.DailyPlanItem, opt => opt.Ignore());
+
+            CreateMap<UserDto, User>();
         }
     }
 }

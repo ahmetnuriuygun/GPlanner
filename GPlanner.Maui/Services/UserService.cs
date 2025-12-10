@@ -1,18 +1,23 @@
 using GPlanner.Core.Model;
 using System.Text.Json;
 using System.Text;
+using AutoMapper;
+using GPlanner.Maui.Services.Dtos;
+
 public class UserService : IUserService
 {
     private readonly HttpClient _httpClient;
+    private readonly IMapper _mapper;
     private readonly string BaseUrl;
 
-    public UserService()
+    public UserService(IMapper mapper)
     {
         _httpClient = new HttpClient();
+        _mapper = mapper;
 #if ANDROID
-        BaseUrl = "http://10.0.2.2:5036/api/User";
+        BaseUrl = "http://10.0.2.2:8080/api/User";
 #else
-        BaseUrl = "http://localhost:5036/api/User";
+        BaseUrl = "http://localhost:8080/api/User";
 #endif
     }
 
@@ -29,7 +34,8 @@ public class UserService : IUserService
                 {
                     PropertyNameCaseInsensitive = true
                 };
-                return JsonSerializer.Deserialize<User>(content, options) ?? new User();
+                var userDto = JsonSerializer.Deserialize<UserDto>(content, options);
+                return _mapper.Map<User>(userDto) ?? new User();
             }
         }
         catch (Exception ex)

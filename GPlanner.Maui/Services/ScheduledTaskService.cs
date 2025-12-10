@@ -17,9 +17,9 @@ public class ScheduledTaskService : IScheduledTaskService
 
         // The API endpoint route is [HttpPut("/update/completed/{taskId}")] in ScheduledTaskController
 #if ANDROID
-        BaseUrl = "http://10.0.2.2:5036/api/ScheduledTask";
+        BaseUrl = "http://10.0.2.2:8080/api/ScheduledTask";
 #else
-        BaseUrl = "http://localhost:5036/api/ScheduledTask";
+        BaseUrl = "http://localhost:8080/api/ScheduledTask";
 #endif
     }
 

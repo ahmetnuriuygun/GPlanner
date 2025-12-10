@@ -10,7 +10,11 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		7Q7TN5yIlOavOULd2Ubm7c31Als=
+		WRfLenvp34yWRP1UzpAvCcsSOKI=
+		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		iEtuUGCV6JM3gxS/pO33swhmpp8=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -108,28 +112,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MnprCrJUBakvtjkhPj1gxzFTb+g4ma9/wveaMSGrMJQ=
+			gBd/GY4ThlruniHVe6vklKOVcwkJUgReAtxqHyiBsKc=
 			</data>
 		</dict>
 		<key>MonoBundle/GPlanner.Core.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NuivuX464f8upEtl859bax87ASmnOlOk8+uwAap7n/U=
+			9+jFpl9kfnplNoPiHO+37eojtvtUIMj5huId8pLEfgw=
 			</data>
 		</dict>
 		<key>MonoBundle/GPlanner.Maui.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CZbWbCtkf5Awv3TAOnSLV5v0DK1dF88i+eabAkfsPV8=
+			A59baP+AKF8WRuos1k32ZyB1VM/oqwBD1//KpZWpUqY=
 			</data>
 		</dict>
 		<key>MonoBundle/GPlanner.Maui.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SROmi79h2lEQ4hN25qhJ78ggGlW6d/ydPUrtHZG7sJE=
+			ewovN1yNFseHW7eM0ruf/LAs0Zs7SpvGYtTyN5kejWQ=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.AspNetCore.Authentication.Abstractions.dll</key>
@@ -1851,7 +1855,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n8hWbaTBYyIZSJHswRWq3jnOMQ8LDDhHRSCjgDYsLz4=
+			OwN9719mqqISaKGjl8Hg2vLPDWF/ARz23QtG2XuskcA=
+			</data>
+		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>

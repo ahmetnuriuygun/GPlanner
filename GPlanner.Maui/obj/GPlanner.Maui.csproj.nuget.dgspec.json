@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj": {}
+    "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj": {}
   },
   "projects": {
-    "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
+    "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
+        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
         "projectName": "GPlanner.Core",
-        "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
+        "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj",
         "packagesPath": "/Users/ahmetnuriuygun/.nuget/packages/",
-        "outputPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/obj/",
+        "outputPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahmetnuriuygun/.nuget/NuGet/NuGet.Config"
@@ -74,14 +74,14 @@
         }
       }
     },
-    "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj": {
+    "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj",
+        "projectUniqueName": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj",
         "projectName": "GPlanner.Maui",
-        "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj",
+        "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj",
         "packagesPath": "/Users/ahmetnuriuygun/.nuget/packages/",
-        "outputPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/obj/",
+        "outputPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Maui/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -100,24 +100,24 @@
           "net9.0-android35.0": {
             "targetAlias": "net9.0-android",
             "projectReferences": {
-              "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
-                "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
+              "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
+                "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
               }
             }
           },
           "net9.0-ios26.0": {
             "targetAlias": "net9.0-ios",
             "projectReferences": {
-              "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
-                "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
+              "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
+                "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
               }
             }
           },
           "net9.0-maccatalyst26.0": {
             "targetAlias": "net9.0-maccatalyst",
             "projectReferences": {
-              "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
-                "projectPath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
+              "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj": {
+                "projectPath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Core/GPlanner.Core.csproj"
               }
             }
           }

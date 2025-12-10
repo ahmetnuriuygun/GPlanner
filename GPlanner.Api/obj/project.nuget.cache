@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kr1fH6qbwPI=",
+  "dgSpecHash": "U/xBdaLlBWk=",
   "success": true,
-  "projectFilePath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Api/GPlanner.Api.csproj",
+  "projectFilePath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Api/GPlanner.Api.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetnuriuygun/.nuget/packages/communitytoolkit.mvvm/8.4.0/communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "/Users/ahmetnuriuygun/.nuget/packages/google.api.commonprotos/2.7.0/google.api.commonprotos.2.7.0.nupkg.sha512",

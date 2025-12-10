@@ -13,9 +13,9 @@ public class GeminiService : IGeminiService
     {
         _httpClient = new HttpClient();
 #if ANDROID
-        BaseUrl = "http://10.0.2.2:5036/api/Planning/generate"; 
+        BaseUrl = "http://10.0.2.2:8080/api/Planning/generate";
 #else
-        BaseUrl = "http://localhost:5036/api/Planning/generate";
+        BaseUrl = "http://localhost:8080/api/Planning/generate";
 #endif
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OCJSaFpORDM=",
+  "dgSpecHash": "PYQ+BxWr+4E=",
   "success": true,
-  "projectFilePath": "/Users/ahmetnuriuygun/Desktop/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj",
+  "projectFilePath": "/Users/ahmetnuriuygun/Desktop/C#/GPlannerSolution/GPlanner.Maui/GPlanner.Maui.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetnuriuygun/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/ahmetnuriuygun/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

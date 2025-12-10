@@ -13,9 +13,9 @@ public class UserTaskService : IUserTaskService
 
 
 #if ANDROID
-        BaseUrl = "http://10.0.2.2:5036/api/usertask";
+        BaseUrl = "http://10.0.2.2:8080/api/userTask";
 #else
-        BaseUrl = "http://localhost:5036/api/usertask";
+        BaseUrl = "http://localhost:8080/api/userTask";
 #endif
     }
 
